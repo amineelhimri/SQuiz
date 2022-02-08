@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+	  <title>
+	     Jeu Dates
+	  </title>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" type="text/css" href="page.css">
+    </head>
+    <body>
+	  <div class="header">
+	    <img class="hed" src="SQuiz.png" alt="logo">
+	  </div>
+	  <div class="topnav">
+       <a href="page1.html"><img class="mini" src="acc.png" alt="acc">Accueil</a>
+	   <a href="page2.html"><img class="mini" src="jeu.png" alt="jeu">Jeux</a>
+      </div>
+	  <div class="roww-1">
+	    <h2>Trouvez la lettre "R"</h2>
+		<img class="res-1" src="alb.jpg" alt="alphabets" usemap="#R">
+		<map name="R">
+		  <area shape="rect" coords="150,100,195,150" onclick="document.getElementById('sh').style.display = 'block';
+		                                                       document.forms[0].elements[0].style.display = 'block'">
+		</map>
+		<img class="res-2" id="sh" src="corr.jpg" alt="correct">
+		<form action="add.html">
+		<input class="ress" type="submit" value="Suivant">
+		</form>
+	  </div>
+	  <div class="footer">
+        <address>
+          Réaliser par <a href="mailto:amine.elhimri@um5r.ac.ma">Amine El Himri</a>.<br> 
+		  Faculté des sciences Rabat
+          Maroc
+        </address>
+      </div>
+	</body>
+  </html>

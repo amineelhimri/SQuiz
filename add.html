@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+	  <title>
+	     Jeu Dates
+	  </title>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" type="text/css" href="page.css">
+    </head>
+    <body>
+	  <div class="header">
+	    <img class="hed" src="SQuiz.png" alt="logo">
+	  </div>
+	  <div class="topnav">
+       <a href="page1.html"><img class="mini" src="acc.png" alt="acc">Accueil</a>
+	   <a href="page2.html"><img class="mini" src="jeu.png" alt="jeu">Jeux</a>
+      </div>
+	  <div class="roww-1">
+	    <h2>Donnez le resultat de l'addition suivante :</h2>
+		<form class="ress-5">
+		  <input class="res-3" type="text" value="1" readonly>
+		  <input class="res-4" type="button" value="+" readonly>
+		  <input class="res-3" type="text" readonly>
+		  <input class="res-4" type="button" value="=" onclick="Calc()" readonly>
+		  <input class="res-3" type="text">
+		</form>
+		<img id="hey" class="res" src="faux.png" alt="correct">
+	    <img id="hello" class="res" src="corr.jpg" alt="correct">
+		<form action="add.html">
+		  <input class="ress" type="submit" value="Réessayer">
+		</form>
+		<form action="page1.html">
+		  <input class="ress" type="submit" value="Acceuil">
+		</form>
+	  </div>
+	  <div class="footer">
+        <address>
+          Réaliser par <a href="mailto:amine.elhimri@um5r.ac.ma">Amine El Himri</a>.<br> 
+		  Faculté des sciences Rabat
+          Maroc
+        </address>
+      </div>
+	  <script>
+	  var a = document.forms[0].elements[0].value = Math.floor(Math.random() * 10),
+	      b = document.forms[0].elements[2].value = Math.floor(Math.random() * 10),
+		  c = document.getElementById('hello').style.display,
+		  i = 0,
+		  d = document.getElementById('hey').style.display;
+	  function Calc(){
+	  let f = parseInt(document.forms[0].elements[4].value);
+	  if(c == "block" || d == "block")
+	  {
+		return
+	  }
+	  else
+	  {
+	    if(f == a + b)
+		{
+		   document.getElementById('hello').style.display = "block";
+		   document.forms[2].elements[0].style.display = "block";
+		}
+		else{
+		   document.getElementById('hey').style.display = "block";
+		   document.forms[1].elements[0].style.display = "block";
+		}
+	  }
+	}
+	  function Coll(){
+      const T = ["Red","#91C92F"];
+      document.querySelector(".ress").style.backgroundColor = T[i % 2];
+      i++;
+      }
+     setInterval(Coll,500)
+    </script>
+	</body>
+  </html>

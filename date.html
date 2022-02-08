@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+	  <title>
+	     Jeu Dates
+	  </title>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" type="text/css" href="page.css">
+    </head>
+    <body>
+	  <div class="header">
+	    <img class="hed" src="SQuiz.png" alt="logo">
+	  </div>
+	  <div class="topnav">
+       <a href="page1.html"><img class="mini" src="acc.png" alt="acc">Accueil</a>
+	   <a href="page2.html"><img class="mini" src="jeu.png" alt="jeu">Jeux</a>
+      </div>
+	  <div class="roww">
+	    <div class="boww">
+		  <h2>Selectionner la date d'aujourd'hui</h2>
+		  <form class="date">
+		    <label for="day"><b>Jour:</b><label>
+		    <select name="day">
+			  <option>01</option>
+			  <option>02</option>
+			  <option>03</option>
+			  <option>04</option>
+			  <option>05</option>
+			  <option>06</option>
+			  <option>07</option>
+			  <option>08</option>
+			  <option>09</option>
+			  <option>10</option>
+			  <option>11</option>
+			  <option>12</option>
+			  <option>13</option>
+			  <option>14</option>
+			  <option>15</option>
+			  <option>16</option>
+			  <option>17</option>
+			  <option>18</option>
+			  <option>19</option>
+			  <option>20</option>
+			  <option>21</option>
+			  <option>22</option>
+			  <option>23</option>
+			  <option>24</option>
+			  <option>25</option>
+			  <option>26</option>
+			  <option>27</option>
+			  <option>28</option>
+			  <option>29</option>
+			  <option>30</option>
+			  <option>31</option>
+			</select>
+            <label for="month"><b>Mois:</b><label>
+			<select name="month">
+			  <option>01</option>
+			  <option>02</option>
+			  <option>03</option>
+			  <option>04</option>
+			  <option>05</option>
+			  <option>06</option>
+			  <option>07</option>
+			  <option>08</option>
+			  <option>09</option>
+			  <option>10</option>
+			  <option>11</option>
+			  <option>12</option>
+			</select>
+            <label for="year"><b>Année:</b><label>
+			<select name="year">
+			  <option>2016</option>
+			  <option>2017</option>
+			  <option>2018</option>
+			  <option>2019</option>
+			  <option>2020</option>
+			  <option>2021</option>
+			  <option>2022</option>
+			</select>
+			<input class="Subi" type="button" value="OK" onclick="Check()">
+		    <img id="hey" class="res" src="faux.png" alt="correct">
+			<img id="hello" class="res" src="corr.jpg" alt="correct">
+			<input class="ress" type="button" value="Réessayer" onclick="Res()">
+		  </form>
+		  <form action="alpha.html">
+			<input class="ress" type="submit" value="Suivant">
+		  </form>
+		</div>
+	  </div>
+	  <div class="footer">
+        <address>
+          Réaliser par <a href="mailto:amine.elhimri@um5r.ac.ma">Amine El Himri</a>.<br> 
+		  Faculté des sciences Rabat
+          Maroc
+        </address>
+      </div>
+	  <script src="date.js"></script>
+	</body>
+  </html>
